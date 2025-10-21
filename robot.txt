@@ -1,6 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
-
 Sitemap: https://hms-7e1m.onrender.com/sitemap.xml
