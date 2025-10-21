@@ -1,33 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <!-- Home Page - Only one version -->
   <url>
     <loc>https://hms-7e1m.onrender.com/</loc>
-    <lastmod>2023-12-01</lastmod>
+    <lastmod>2025-10-21T07:37:07+00:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>1.00</priority>
   </url>
+  
+  <!-- Services Page - Choose one location -->
   <url>
     <loc>https://hms-7e1m.onrender.com/pages/services.html</loc>
-    <lastmod>2023-12-01</lastmod>
+    <lastmod>2025-10-21T07:37:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
+  
+  <!-- Products Page - Choose one location -->
   <url>
     <loc>https://hms-7e1m.onrender.com/pages/products.html</loc>
-    <lastmod>2023-12-01</lastmod>
+    <lastmod>2025-10-21T07:37:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
+  
+  <!-- About Page - Choose one location -->
   <url>
     <loc>https://hms-7e1m.onrender.com/pages/about.html</loc>
-    <lastmod>2023-12-01</lastmod>
+    <lastmod>2025-10-21T07:37:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.80</priority>
   </url>
+  
+  <!-- Contact Page - Choose one location -->
   <url>
     <loc>https://hms-7e1m.onrender.com/pages/contact.html</loc>
-    <lastmod>2023-12-01</lastmod>
+    <lastmod>2025-10-21T07:37:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.80</priority>
   </url>
+
 </urlset>
