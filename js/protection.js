@@ -2,7 +2,8 @@
 class WebsiteProtection {
     constructor() {
         this.domain = 'hozarmarine.com'; // Change to your actual domain
-        this.allowedDomains = ['localhost', '127.0.0.1', this.domain];
+        // keep default allowed hosts but allow common static preview hosts in runtime check
+        this.allowedDomains = ['localhost', '127.0.0.1', this.domain, 'github.io', 'githubpreview.dev', 'pages.dev'];
         this.init();
     }
 
@@ -18,9 +19,19 @@ class WebsiteProtection {
 
     checkDomain() {
         const currentDomain = window.location.hostname;
-        if (!this.allowedDomains.includes(currentDomain)) {
-            this.redirectToOfficial();
+
+        // Allow official domain, localhost, and common static preview domains (e.g., GitHub Pages / previews)
+        const isOfficial = this.allowedDomains.includes(currentDomain);
+        const isGithubPages = currentDomain.endsWith('.github.io');
+        const isGithubPreview = currentDomain.endsWith('.githubpreview.dev');
+        const isPagesDev = currentDomain.endsWith('.pages.dev');
+
+        if (isOfficial || isGithubPages || isGithubPreview || isPagesDev) {
+            return; // allowed
         }
+
+        // Not allowed -> redirect
+        this.redirectToOfficial();
     }
 
     redirectToOfficial() {
